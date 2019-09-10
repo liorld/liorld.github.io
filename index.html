@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>oms谷仓系统_v2</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/tabstyle.css" rel="stylesheet">
+<link href="css/animation.css" rel="stylesheet">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script src="js/simpleAlert.js"></script>
+<script type="text/javascript" src="js/Sortable.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/common.js"></script>
+</head>
+<body> 
+<div class="wrapper" id="conwrap">
+	<div class="head">
+		<div class="logo"><h1><a href="index.html"><img src="images/logo.png" alt="" /></a></h1></div>
+		<div class="nav menu">
+			<ul>
+			 	<li class="fri on"><span class="home">首页</span></li>
+			 	<li class="fri"><span>商品管理</span>
+			 		<ul class="submenu">
+						<li><a href="commodity1.html">商品管理</a></li>
+						<li><a href="commodity2.html">创建商品</a></li>
+						<li><a href="commodity3.html">商品异常</a></li>
+						<li><a href="commodity4.html">商品映射</a></li>
+						<li><a href="commodity1.html">商品管理管理管理</a></li>
+						<li><a href="commodity4.html">商品映射</a></li>
+					</ul>
+			 	</li>
+			 	<li class="fri"><span>仓配管理</span>
+			 		<ul class="submenu">
+						<li><a href="warehouse.html">仓配管理</a></li>
+						<li><a href="warehouse2.html">创建入库单<i class="m">more</i></a></li>
+						<li><a href="warehouse3.html">入库单异常<i class="n"></i></a></li>
+						<li><a href="warehouse4.html">库存查询</a></li>
+						<li><a href="warehouse5.html">库存动态</a></li>
+					</ul>
+			 	</li>
+			 	<li class="fri"><span>订单管理</span>
+			 		<ul class="submenu">
+						<li><a href="order.html">订单管理</a></li>
+						<li><a href="order2.html">创建订单<i class="m">more</i></a></li>
+						<li><a href="order3.html">订单异常<i class="n"></i></a></li>
+						<li><a href="order4.html">平台订单中心</a></li>
+					</ul>
+			 	</li>
+			 	<li class="fri"><span>财务管理</span>
+				 	<ul class="submenu">			
+						<li><a href="financial2.html">充值中心</a></li>
+						<li><a href="financial3.html">交易明细</a></li>
+						<li><a href="financial4.html">费用流水</a></li>
+						<li><a href="financial.html">账单管理</a></li>
+					</ul>
+			 	</li> 
+			 	<li class="fri"><span>数据中心</span>
+			 		<ul class="submenu">
+						<li><a href="data.html">统计报表</a></li>
+						<li><a href="data2.html">运营中心</a></li>
+					</ul>
+			 	</li>
+			 	<li class="fri"><span>服务管理</span>
+			 		<ul class="submenu">
+						<li><a href="service.html">服务管理</a></li>
+						<li><a href="service202.html">增值服务登记</a></li>
+						<li><a href="service3.html">退货管理</a></li>
+						<li><a href="service4.html">索赔管理</a></li>
+					</ul>
+			 	</li>
+			 	<li class="fri"><span>系统设置</span>
+			 		<ul class="submenu">
+						<li><a href="system.html">用户中心</a></li>
+						<li><a href="system13.html">子账号管理</a></li>
+						<li><a href="system2.html">开发者中心</a></li>
+						<li><a href="system3.html">平台账号管理</a></li>
+						<li><a href="system4.html">地址管理</a></li>
+						<li><a href="system5.html">打印机设置</a></li>
+						<li><a href="system6.html">工具中心</a></li>
+						<li><a href="system7.html">订阅中心</a></li>
+						<li><a href="system8.html">任务中心</a></li>
+						<li><a href="system9.html">公告通知</a></li>
+						<li><a href="system10.html">系统日志</a></li>
+						<li><a href="system11.html">帮助中心</a></li>
+						<li><a href="system12.html">建议反馈</a></li>
+					</ul>
+			 	</li>
+			 </ul>
+		</div>
+		<div class="userpanel">
+			<li><a href="system9.html" class="ser_avtar notes"><span><i>16</i></span></a></li>
+			<li>
+				<a class="ser_avtar username open"><img src="images/portrait.png" alt="" />Admin</a>
+				 <div class="dropdown topdrop hide">
+					<a href="user.html">用户中心</a>
+					<a href="">English</a>
+					<a href="index.html">网站首页</a>
+					<a href="login.html">退出登录</a>
+				</div>
+			</li>
+		</div>
+	</div>
+<div id="Home_Body">
+	<div class="home_container">
+		<div class="home_notice a_unline AB">
+			<em>通知</em><p>9月“仓储计划”已正式结束，现将发放情况公告如下，欢迎关注。 </p><a href="">查看详情></a>
+		</div>
+		<div class="home_col_left fl">
+			<div class="ubrief fl">
+				<div class="hm_name clear">
+					<a href="user.html" class="name_photo fl"><img src="images/portrait.jpg" alt="" /></a>
+					<div class="name_text a_unline"><h6>金盒子责任有限公司</h6><p>客户代码：G620</p><a href="">基本信息></a></div>
+				</div>
+				<p class="welcome">欢迎登陆谷仓仓储，让我们一起为梦想加油！</p>
+				<div class="balance"><p class="fl">账户余额($)：<em class="mismo">******</em><i class="eyeIcon"></i></p><a href="" class="orangebtn fr">我要充值</a></div>
+			</div>
+			<div class="order_statistics">
+				<ul>
+					<li><p>今日订单数</p><h5>3234</h5></li>
+					<li><p>今日发货订单数</p><h5>3234<i class="up"></i></h5></li>
+					<li><p>今日出库量(件)</p><h5>3234</h5></li>
+					<li><p>今日入库量(件)</p><h5>3234</h5></li>
+					<li><p>昨日订单数</p><h5>3234<i class="down"></i></h5></li>
+					<li><p>昨日发货订单数</p><h5>3234</h5></li>
+					<li><p>昨日出库量(件)</p><h5>3234</h5></li>
+					<li><p>昨日入库量(件)</p><h5>3234</h5></li>
+				</ul>
+			</div>
+			<div class="cus_serv fl">
+				<div class="panel_tit"><h3>客户服务</h3><div class="side"><a href="" class="am">建议反馈 ></a></div></div>
+				<div class="cus_body">
+					<p>销售代表<em class="name">张小光</em><em>18727189987</em></p>
+					<p>客服代表<em class="name">张小光</em><em>18727189987</em></p>
+				</div>
+			</div>
+			<div class="abnormal of">
+				<ul>
+					<li><a href=""><span class="ico1"><em>99</em></span><p>订单异常</p></a></li>
+					<li><a href=""><span class="ico2"><em>99</em></span><p>入库单异常</p></a></li>
+					<li><a href=""><span class="ico3"><em>99</em></span><p>产品异常</p></a></li>
+					<li><a href=""><span class="ico4"><em>99</em></span><p>未预报退货</p></a></li>
+				</ul>
+			</div>
+			<div class="Shortcut_menu">
+				<div class="panel_tit"><h3>快捷导航</h3></div>			
+				<ul class="drag_lay drag_list" id="foo"></ul>
+				<div class="add_fast_menu"><a href="javascript:void(0);" class="buldBtn pop_out"></a>
+					<div class="judgealert hide">
+						<div class="popup-bg close"></div>
+						<div class="popup-main pop_animation">
+							<div class="pop_tit"><h5>创建快捷导航</h5><div class="side"><a href="javascript:void(0);" class="x_close"></a></div></div>
+							<div class="ser_tips"><span>最多可选择8项</span></div>
+							<div class="create_menu">
+								<div class="row_item">
+									<h6><span>新建</span></h6>
+									<ul class="drag_lay set_menu">
+										<li><em class="mask"></em><a href="index.html"><span><img src="images/testico.png" alt="" /></span><p>创建入库单1</p></a></li>
+										<li><em class="mask"></em><a href="index.html"><span><img src="images/testico.png" alt="" /></span><p>创建入库单2</p></a></li>
+										<li><em class="mask"></em><a href="index.html"><span><img src="images/testico.png" alt="" /></span><p>创建入库单3</p></a></li>
+										<li><em class="mask"></em><a href="index.html"><span><img src="images/testico.png" alt="" /></span><p>创建入库单4</p></a></li>
+										<li><em class="mask"></em><a href="index.html"><span><img src="images/testico.png" alt="" /></span><p>创建入库单5</p></a></li>
+										<li><em class="mask"></em><a href="index.html"><span><img src="images/testico.png" alt="" /></span><p>创建入库单6</p></a></li>
+										<li><em class="mask"></em><a href="index.html"><span><img src="images/testico.png" alt="" /></span><p>创建入库单1</p></a></li>
+										<li><em class="mask"></em><a href=""><span><img src="images/testico.png" alt="" /></span><p>创建入库单1</p></a></li>
+										<li><em class="mask"></em><a href=""><span><img src="images/testico.png" alt="" /></span><p>创建入库单1</p></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="pop_bottom createNav_btn"><a href="javascript:void(0);" class="pop_close closea">取消</a><a href="javascript:void(0);" class="pop_confirm closea">确定</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="Trend TabsIndex">
+				<div class="trand_tab tab_hd"><span class="on">整体走势</span><span>订单分布</span><span>预警统计</span><span>热销排行</span></div>
+				<div class="trend_body tab_body">
+					<div class="item tab_item">
+						<p><img src="images/trand.jpg" alt="" /></p>
+					</div>
+					<div class="item tab_item hide">
+						<p><img src="images/trand_map.jpg" alt="" /></p>
+					</div>
+					<div class="item tab_item hide">
+						<p><img src="images/trand_3.jpg" alt="" /></p>
+					</div>
+					<div class="item tab_item hide">
+						<p><img src="images/trand_4.jpg" alt="" /></p>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="home_col_right of">
+			<div id="slideBox" class="slideBox">
+				<div class="hd">
+					<ul></ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<li><a href="" target="_blank"><img src="images/pic4.jpg" /></a></li>
+						<li><a href="" target="_blank"><img src="images/pic2.jpg" /></a></li>
+						<li><a href="" target="_blank"><img src="images/pic3.jpg" /></a></li>
+					</ul>
+				</div>
+
+				<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+				<a class="prev" href="javascript:void(0)"></a>
+				<a class="next" href="javascript:void(0)"></a>
+
+			</div>
+			<script type="text/javascript">
+			jQuery(".slideBox").slide({titCell:".hd ul",mainCell:".bd ul",effect:"fold",autoPlay:true,autoPage:true});
+			</script>
+
+			<div class="operat_hm">
+				<div class="panel_tit"><h3>操作面板</h3></div>
+				<div class="operat_body a_unline">
+					<ul>
+						<li><div class="icon"><img src="images/testico.png" alt="" /></div><div class="item_info"><p>订单待审核</p><h6>315</h6><p><a href="">立即审核 ></a></p></div></li>
+						<li><div class="icon"><img src="images/testico.png" alt="" /></div><div class="item_info"><p>订单待审核</p><h6>315</h6><p><a href="">立即审核 ></a></p></div></li>
+						<li><div class="icon"><img src="images/testico.png" alt="" /></div><div class="item_info"><p>订单待审核</p><h6>315</h6><p><a href="">立即审核 ></a></p></div></li>
+						<li><div class="icon"><img src="images/testico.png" alt="" /></div><div class="item_info"><p>订单待审核</p><h6>315</h6><p><a href="">立即审核 ></a></p></div></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="offTime">
+				<div class="panel_tit"><h3>截单时间<i class="Qico help_tip altl"><span class='hint'>服务时间：从即日起会累积统计，最长时长累积1年，当前部分指标数据因无历史数据，所以不同指标展示数据时长当前可能存在差</span></i></h3></div>
+				<div class="offtime_tit"><p class="name">所在仓库</p><p>北京时间</p><p>当地时间</p></div>
+				<div class="txtScroll">
+					<div class="hd"><a class="next"></a><a class="prev"></a></div>
+					<div class="bd">
+						<ul class="infoList">
+							<li>
+								<div class="ck"><p class="name">美西仓</p><p>00:00:00</p><p>00:00:00</p></div>
+								<div class="ck"><p class="name">美西仓</p><p>00:00:00</p><p>00:00:00</p></div>
+								<div class="ck"><p class="name">美西仓</p><p>00:00:00</p><p>00:00:00</p></div>
+							</li>
+							<li>
+								<div class="ck"><p class="name">美西仓</p><p>00:00:00</p><p>00:00:00</p></div>
+								<div class="ck"><p class="name">美西仓</p><p>00:00:00</p><p>00:00:00</p></div>
+								<div class="ck"><p class="name">美西仓</p><p>00:00:00</p><p>00:00:00</p></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<script type="text/javascript">
+				 jQuery(".txtScroll").slide({titCell:".hd ul",mainCell:".bd ul",effect:"left",autoPlay:true});
+				</script>
+			</div>
+
+			<div class="sysnote">
+				<div class="panel_tit"><h3>系统公告</h3><div class="side"><a href="" class="am">查看更多 ></a></div></div>
+				<div class="sysnote_body a_unline clamp">
+					<ul>
+						<li><i class="dis_tit">优惠</i><a href="">服务时间：从即日起会累积统计，最长时长累服务时间：从即日起会累积统计，最长时长累</a></li>
+						<li><i class="ser_tit">服务</i><a href="">服务时间：从即日起会累积统计，最长时长累</a></li>
+						<li><i class="note_tit">通知</i><a href="">服务时间：从即日起会累积统计，最长时长累</a></li>
+						<li><i class="note_tit">通知</i><a href="">服务时间：从即日起会累积统计，最长时长累</a></li>
+						<li><i class="note_tit">通知</i><a href="">服务时间：从即日起会累积统计，最长时长累</a></li>
+						<li><i class="note_tit">通知</i><a href="">服务时间：从即日起会累积统计，最长时长累</a></li>
+						<li><i class="note_tit">通知</i><a href="">服务时间：从即日起会累积统计，最长时长累</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>	
+		<div class="clear"></div>
+	</div>
+	<div class="foot" id="footer"> 
+		<div class="foot-nav a_unline"><a href="">网站首页</a><a href="">服务列表</a><a href="">开放平台</a><a href="">开放平台</a></div>
+		<div class="copyright"><p>Powered by 易可达 © 2017 GOODCANG.CON CORPORATION. All Rights Reserved.</p></div>
+	</div>
+</div>
+
+<div class="Iframe_Body hide">
+<div class="marktab_box">
+	<div id="page-tab">
+		<button class="tab-btn" id="page-prev"></button>
+		<div id="page-tab-content">
+			<div id="menu-list"></div>
+		</div>
+		<button class="tab-btn" id="page-next"></button>
+		<div id="page-operation">
+			<div id="menu-all">
+				<ul id="menu-all-ul">
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="page-content" style="height: 100%;">
+		
+	</div>	
+</div>
+</div>
+<div id="footer" class="hide"></div>
+<!-- page_container -->
+<script>
+$(function() {
+	  $(".nav li .home").click(function(){	  		
+		$("#Home_Body").show();	
+		$(".Iframe_Body").hide();
+		$(".fri").removeClass("on");
+		$(this).parents('li').addClass('on');
+		});
+	$(".nav .submenu a").click(function(){
+		var s = $(".Iframe_Body");
+		var h = $("#Home_Body");	
+		if(s.is(":hidden")){
+			s.show();
+			h.hide();
+		}
+		var pp = $(this).parents(".fri");
+		$(".fri").removeClass('on');
+		pp.addClass('on');
+		
+	})
+
+	$(".menu a").tab();
+
+	$('.Iframe_Body').on('mousedown','.menu-close',function(){		
+		var t = $("#page-tab-content a").length;
+		// var v = $(this).parent("a").attr("data-url");
+		// var b = $("#page-operation li").attr("data-url");
+		if(t == 1){
+				$("#Home_Body").show();
+				$(".Iframe_Body").hide();
+				$("#page-content,#menu-list").html("");
+		}
+		
+	});
+  });
+</script>
+<script type="text/javascript" src="js/drag_sor.js"></script>
+</body>
+</html>
